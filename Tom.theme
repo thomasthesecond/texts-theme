@@ -1,0 +1,188 @@
+/**************************** Overrides ****************************/
+
+div {
+	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	line-height: 1.5;
+}
+
+div.Code, div.Formula, span.Code, span.Math {
+	font-family: 'Inconsolata', 'Courier New', monospace;
+}
+
+div.Heading { font-family: '' }
+
+div.Heading.Indent0 { margin-top: .7em; }
+
+/*div {
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+div.Code,
+div.Formula,
+span.Code,
+span.Math {
+	font-size: 30px;
+}
+
+span.NoteRef {
+	font-size: 30px;
+}
+
+div.Heading.Indent0 {
+	font-size: 60px;
+	line-height: 1.2;
+}
+
+div.Heading.Indent1 {
+	font-size: 50px;
+	line-height: 1.2;
+}
+
+div.Heading.Indent2 {
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+div.Heading.Indent0 span.Code,
+div.Heading.Indent0 span.Math {
+	font-size: 60px;
+	line-height: .9;
+}
+
+div.Heading.Indent1 span.Code,
+div.Heading.Indent1 span.Math {
+	font-size: 50px;
+	line-height: .9;
+}
+
+div.Heading.Indent2 span.Code,
+div.Heading.Indent2 span.Math {
+	font-size: 40px;
+	line-height: .9;
+}
+
+div.Heading.Indent0 span.NoteRef {
+	font-size: 60px;
+	line-height: 1;
+}
+
+div.Heading.Indent1 span.NoteRef {
+	font-size: 50px;
+	line-height: 1;
+}
+
+div.Heading.Indent2 span.NoteRef {
+	font-size: 40px;
+	line-height: 1;
+}*/
+
+/**************************** Dark Color Scheme ****************************/
+
+/* main text */
+body {
+	background-color: #1d1f21;
+	color: #c5c8c6;
+}
+
+/* selection */
+::selection {
+	background-color: #969896;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	background-color: #1d1f21;
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: #282a2e;
+}
+
+div.Comment {
+	background-color: #282a2e;
+}
+
+/* headings and square image sign */
+div.Heading,
+div.Image span.Prefix:before {
+	/*color: #cc6666;*/ /* Red */
+	/*color: #b5bd68;*/ /* Green */
+	/*color: #8abeb7;*/ /* Aqua */
+	color: #81a2be; /* Blue */
+	/*color: #b294bb;*/ /* Purple */
+}
+
+/* code blocks and spans */
+div.Code,
+span.Code {
+	color: #f0c674;
+}
+
+/* border around code blocks */
+div.Code {
+	border: 2px solid #282a2e;
+	padding: 14px 18px;
+}
+
+/* math blocks and spans */
+div.Formula,
+span.Math {
+	color: #969896;
+}
+
+/* bullets and numbers */
+span.Prefix {
+	color: #969896;
+}
+
+/* URLs and link text underlining */
+span.Url,
+span.LinkText {
+	border-bottom-color: #969896;
+}
+
+/* references */
+span.NoteRef {
+	color: #969896;
+	border-color: #969896;
+}
+
+/* all text in notes */
+div.Note {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+div.Note span.Plain,
+div.Note span.Emphasis,
+div.Note span.Strong,
+div.Note span.Url,
+div.Note span.LinkText {
+	color: #969896;
+}
+
+/* URLs in image blocks */
+div.Image span.Url {
+	color: #969896;
+}
+
+/* active spans (except plain text) */
+span#ActiveSpan:not(.Plain):not(.Prefix) {
+	background-color: #4b3b4d;
+}
+
+/**************************** Navigation Hovering *****************************/
+
+.navigation span.Url:hover {
+	color: #DE8E30;
+	border-bottom-color: #DE8E30;
+}
+
+.navigation span.NoteRef:hover {
+	color: #DE8E30;
+	border-color: #DE8E30;
+	border-style: solid;
+}
